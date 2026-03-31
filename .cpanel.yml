@@ -1,0 +1,11 @@
+
+
+
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/motodivs/api.motodiv.store/
+    - /bin/cp server.js $DEPLOYPATH
+    - /bin/cp package.json $DEPLOYPATH
+    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp -R public/js $DEPLOYPATH

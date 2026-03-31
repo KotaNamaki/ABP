@@ -30,6 +30,7 @@ app.get('/api/data', async (req, res) => {
             nim: doc.nim,
             jurusan: doc.jurusan,
         }));
+        console.log(formattedData);
         res.json({ data: formattedData });
     } catch (error) {
         res.status(500).json({ error: error.message });
