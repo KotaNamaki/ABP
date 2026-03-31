@@ -4,7 +4,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/motodivs/dika.motodiv.store/
+    - export DEPLOYPATH=/home/motodivs/dika/
     - /bin/cp server.js $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
     - /bin/cp -R public $DEPLOYPATH
